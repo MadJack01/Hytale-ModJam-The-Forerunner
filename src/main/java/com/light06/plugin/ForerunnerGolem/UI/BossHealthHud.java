@@ -10,17 +10,19 @@ import javax.annotation.Nonnull;
 public class BossHealthHud extends CustomUIHud {
     String bossName;
     PlayerRef playerRef;
+    double percentagePv;
 
-    public BossHealthHud(@Nonnull PlayerRef playerRef, String bossName) {
+    public BossHealthHud(@Nonnull PlayerRef playerRef, String bossName, double percentagePv) {
         super(playerRef);
         this.playerRef = playerRef;
         this.bossName = bossName;
+        this.percentagePv = percentagePv;
     }
 
     @Override
     protected void build(@Nonnull UICommandBuilder builder) {
         builder.append("bosshealth.ui");
         builder.set("#BossName.Text", bossName);
-        builder.set("#BossHealthBar.Value", 0.30d) ;
+        builder.set("#BossHealthBar.Value", percentagePv);
     }
 }

@@ -30,12 +30,9 @@ public class BossUiTestCommand extends AbstractPlayerCommand {
         HudManager hudManager = player.getHudManager();
         String bossName = "Golem test name";
 
-        // Show event title
-
-
         CompletableFuture.runAsync(()-> {
             if (!(hudManager.getCustomHud() instanceof BossHealthHud)) {
-                hudManager.setCustomHud(playerRef, new BossHealthHud(playerRef, bossName));
+                hudManager.setCustomHud(playerRef, new BossHealthHud(playerRef, bossName, 1));
                 EventTitleUtil.showEventTitleToPlayer(playerRef,
                         Message.raw("BOSS FIGHT"), Message.raw(bossName),
                         true, "ui/icons/skull.png", 3.0f, 0.5f, 0.5f);
