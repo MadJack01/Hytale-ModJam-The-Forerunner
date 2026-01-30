@@ -286,12 +286,7 @@
 	"EnvironmentProvider":	{
 		"$NodeId":	"Constant.EnvironmentProvider-051385ad-f524-45a1-aeb7-c8122adda36a",
 		"Type":	"Constant",
-		"Environment":	"Zone1_Plains"
-	},
-	"TintProvider":	{
-		"$NodeId":	"Constant.TintProvider-b84d2228-483a-4b4c-8c72-722d3bb72cc0",
-		"Type":	"Constant",
-		"Color":	"#5b9e28"
+		"Environment":	"Forerunner_Env"
 	},
 	"$NodeEditorMetadata":	{
 		"$Nodes":	{
@@ -667,6 +662,10 @@
 				"$NodeId":	"WeightedPath.Prefab.Prop-5891750d-beec-4fc4-a3ac-98bf1bfeec4c",
 				"Path":	"Monuments/Encounter/City_Ruins",
 				"Weight":	20
+			}, {
+				"$NodeId":	"Constant.TintProvider-b84d2228-483a-4b4c-8c72-722d3bb72cc0",
+				"Type":	"Constant",
+				"Color":	"#5b9e28"
 			}, {
 				"$NodeId":	"ConstantMaterialProvider-0f425809-8d77-4c01-b383-22a3fd31c1c6",
 				"Type":	"Constant",
