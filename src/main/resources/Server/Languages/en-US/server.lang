@@ -1,0 +1,6 @@
+items.PortalKey_Forerunner.name = Fragment: Orbis - The Forerunners
+items.PortalKey_Forerunner.description =  <msg key="server.items.PortalKey.description"/>\n\n<i>The land of the inhabitants of orbis before it's fracture</i>
+portals.Forerunner = The Forerunners world
+portals.Forerunner.description = Someone may be waiting for you there
+portals.Forerunner.tip1 = Tip 2
+portals.Forerunner.tip2 = Tip 1

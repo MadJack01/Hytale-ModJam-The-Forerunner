@@ -1,0 +1,20 @@
+{
+  "InstanceId": "The_Forerunners",
+  "Description": {
+    "DisplayName": "server.portals.Forerunner",
+    "FlavorText": "server.portals.Forerunner.description",
+    "ThemeColor": "#744d4d",
+    "SplashImage": "DefaultArtwork.png",
+    "Tips": [
+      "server.portals.Forerunner.tip1",
+      "server.portals.Forerunner.tip2"
+    ]
+  },
+  "VoidInvasionEnabled": false,
+  "PlayerSpawn": {
+    "Y": 20,
+    "ScanHeight": 16,
+    "MinRadius": 60,
+    "MaxRadius": 60
+  }
+}
