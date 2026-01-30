@@ -1,0 +1,20 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Golem_Phase_Three",
+  "Modify": {
+    "Appearance": "Golem_Guardian_Void",
+    "_CombatConfig": "CAE_Golem_Phase_Three_Fast",
+    "Burn": true,
+    "DropList": "Empty",
+    "MaxHealth": 200,
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "server.npcRoles.Goblin_Duke.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}
