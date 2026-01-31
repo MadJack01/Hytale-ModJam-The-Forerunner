@@ -5,6 +5,8 @@ import com.hypixel.hytale.server.core.event.events.player.DrainPlayerFromWorldEv
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.light06.plugin.ForerunnerGolem.Commands.BossUiTestCommand;
+import com.light06.plugin.ForerunnerGolem.Events.TriggerBossEvent;
+import com.light06.plugin.ForerunnerGolem.Handler.TriggerBossHandler;
 import com.light06.plugin.ForerunnerGolem.Listeners.AddPlayerFromWorldEventListener;
 import com.light06.plugin.ForerunnerGolem.Systems.BossTickingSystem;
 import javax.annotation.Nonnull;
@@ -20,5 +22,6 @@ public class ForerunnerGolemPlugin extends JavaPlugin {
         this.getEntityStoreRegistry().registerSystem(new BossTickingSystem());
 
         this.getEventRegistry().registerGlobal(AddPlayerToWorldEvent.class, AddPlayerFromWorldEventListener::on);
+        this.getEventRegistry().registerGlobal(TriggerBossEvent.class, new TriggerBossHandler());
     }
 }

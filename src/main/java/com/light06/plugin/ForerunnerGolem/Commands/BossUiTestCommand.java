@@ -13,6 +13,7 @@ import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.core.util.EventTitleUtil;
 import com.hypixel.hytale.server.core.util.NotificationUtil;
+import com.light06.plugin.ForerunnerGolem.Events.TriggerBossEvent;
 import com.light06.plugin.ForerunnerGolem.UI.BossHealthHud;
 import com.light06.plugin.ForerunnerGolem.UI.EmptyHudUI;
 
@@ -26,7 +27,13 @@ public class BossUiTestCommand extends AbstractPlayerCommand {
 
     @Override
     protected void execute(@Nonnull CommandContext commandContext, @Nonnull Store<EntityStore> store, @Nonnull Ref<EntityStore> ref, @Nonnull PlayerRef playerRef, @Nonnull World world) {
-        Player player = commandContext.senderAs(Player.class);
+/*        Player player = store.getComponent(ref, Player.getComponentType());
+        PlayerRef pRef = store.getComponent(ref, PlayerRef.getComponentType());
+        if (player == null || pRef == null) {
+            return;
+        }*/
+        TriggerBossEvent.dispatch(ref);
+        /*BossHealthHud.setHudManager(player, pRef);
         HudManager hudManager = player.getHudManager();
         String bossName = "Golem test name";
 
@@ -47,6 +54,6 @@ public class BossUiTestCommand extends AbstractPlayerCommand {
                     hudManager.setCustomHud(playerRef, new EmptyHudUI(playerRef));
                 }
             }
-        }, world);
+        }, world);*/
     }
 }
