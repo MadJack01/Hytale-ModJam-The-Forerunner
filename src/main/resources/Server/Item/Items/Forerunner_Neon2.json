@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Neon"
+    "Name": "Neon2"
   },
   "Icon": "Icons/ItemsGenerated/Forerunner_Neon2.png",
   "Categories": [
@@ -27,7 +27,7 @@
       "Radius": 10
     },
     "Tint": [
-      "#f8ff00"
+      "#e8ee0d"
     ],
     "BlockSoundSetId": "Metal",
     "ParticleColor": "#ff0000"

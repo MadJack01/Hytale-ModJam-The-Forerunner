@@ -50,8 +50,11 @@
       }
     ],
     "BlockSoundSetId": "Stone",
+    "Light": {
+      "Radius": 0
+    },
     "Tint": [
-      "#ffffff"
+      "#cacaca"
     ]
   },
   "ResourceTypes": [

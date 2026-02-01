@@ -3,7 +3,7 @@
   "Reference": "Spider",
   "Modify": {
     "Appearance": "Forerunner_Spider",
-    "DropList": "Drop_Spider_Cave",
+    "DropList": "",
     "MaxHealth": 74,
     "BlockStepDetectionBlockSet": "Web",
     "BlockStepDetectionRange": 20,
@@ -86,7 +86,7 @@
                       "Next": {
                         "Type": "ApplyEffect",
                         "Entity": "Target",
-                        "EffectId": "Poison_T1"
+                        "EffectId": ""
                       }
                     }
                   }

@@ -1,7 +1,18 @@
 {
   "Type": "Simple",
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Forerunner_Golem_AOE_Warning_Effect",
+        "TargetEntityPart": "Entity"
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
   "$Comment": "Prepare Delay",
-  "RunTime": 0.733,
+  "RunTime": 2,
   "Next": {
     "Type": "Parallel",
     "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
@@ -13,12 +24,8 @@
             "$Comment": "Length of Combat",
             "RunTime": 0.217,
             "Selector": {
-              "Id": "Stab",
-              "EndDistance": 10,
-              "ExtendTop": 4,
-              "ExtendBottom": 4,
-              "ExtendLeft": 3,
-              "ExtendRight": 3
+              "Id": "AOECircle",
+              "Range": 10
             },
             "HitEntity": {
               "Interactions": [
@@ -29,7 +36,8 @@
                       "NPC_Attack_Melee_Damage"
                     ]
                   },
-                  "Var": "Melee_Damage"
+                  "Var": "Melee_Damage",
+                  "Effects": {}
                 }
               ]
             },
@@ -38,7 +46,13 @@
               "$Comment": "Pad the interaction length",
               "RunTime": 0.55
             },
-            "Effects": {}
+            "Effects": {
+              "MovementEffects": {
+                "DisableAll": true
+              },
+              "ItemPlayerAnimationsId": "Golem_Crystal_Thunder_Default",
+              "ItemAnimationId": "Stomp"
+            }
           }
         ]
       },
@@ -52,27 +66,14 @@
               "WorldSoundEventId": "SFX_Golem_Earth_Swing",
               "Particles": [
                 {
-                  "SystemId": "Flamethrower_Effect"
+                  "SystemId": "Forerunner_Golem_AOE_Effect",
+                  "TargetEntityPart": "Entity"
                 }
               ]
             }
           }
         ]
       }
-    ],
-    "Effects": {
-      "Particles": [
-        {
-          "SystemId": "Forerunner_Golem_Beam_Effect",
-          "TargetEntityPart": "Entity",
-          "RotationOffset": {
-            "Yaw": 90
-          },
-          "PositionOffset": {
-            "Y": 1
-          }
-        }
-      ]
-    }
+    ]
   }
 }

@@ -30,7 +30,7 @@
       "SpawnerId": "Forerunner_Beam_Constant_Flat",
       "PositionOffset": {
         "Z": 0,
-        "X": 0,
+        "X": -5,
         "Y": 0.5
       },
       "FixedRotation": false,
@@ -41,7 +41,10 @@
       }
     },
     {
-      "SpawnerId": "Forerunner_Beam_Constant"
+      "SpawnerId": "Forerunner_Beam_Constant",
+      "PositionOffset": {
+        "X": -5
+      }
     }
   ],
   "BoundingRadius": 100.0,

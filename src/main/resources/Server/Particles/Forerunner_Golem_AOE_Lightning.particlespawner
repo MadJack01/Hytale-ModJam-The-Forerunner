@@ -4,8 +4,8 @@
   "LinearFiltering": true,
   "LightInfluence": 0,
   "ParticleLifeSpan": {
-    "Min": 1,
-    "Max": 1
+    "Min": 0.8,
+    "Max": 0.9
   },
   "ParticleRotateWithSpawner": false,
   "TrailSpawnerPositionMultiplier": 0,
@@ -14,14 +14,10 @@
     "Min": 0,
     "Max": 0
   },
-  "MaxConcurrentParticles": 700,
+  "MaxConcurrentParticles": 100,
   "SpawnRate": {
     "Min": 700,
     "Max": 700
-  },
-  "TotalParticles": {
-    "Min": 501,
-    "Max": 500
   },
   "Attractors": [
     {
@@ -148,8 +144,8 @@
       "Max": 1
     },
     "Speed": {
-      "Min": 20,
-      "Max": 110
+      "Min": 5,
+      "Max": 35
     }
   }
 }

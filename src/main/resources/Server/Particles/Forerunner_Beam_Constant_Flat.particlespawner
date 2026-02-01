@@ -11,7 +11,7 @@
     "Max": 1.0
   },
   "Particle": {
-    "Texture": "Particles/Textures/Basic/LightBeam.png",
+    "Texture": "Particles/Textures/BeamLight.png",
     "ScaleRatioConstraint": "None",
     "Animation": {
       "0": {
@@ -29,12 +29,12 @@
     "InitialAnimationFrame": {
       "Scale": {
         "X": {
-          "Min": 3,
-          "Max": 3
+          "Min": 1.2,
+          "Max": 1.2
         },
         "Y": {
-          "Min": 3,
-          "Max": 3
+          "Min": 1,
+          "Max": 1
         }
       },
       "Opacity": 1.0,

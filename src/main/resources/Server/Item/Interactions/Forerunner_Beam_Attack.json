@@ -17,8 +17,8 @@
               "EndDistance": 20,
               "ExtendTop": 4,
               "ExtendBottom": 4,
-              "ExtendLeft": 3,
-              "ExtendRight": 3
+              "ExtendLeft": 1,
+              "ExtendRight": 1
             },
             "HitEntity": {
               "Interactions": [
@@ -29,7 +29,7 @@
                       "NPC_Attack_Melee_Damage"
                     ]
                   },
-                  "Var": "Melee_Damage"
+                  "Var": ""
                 }
               ]
             },
