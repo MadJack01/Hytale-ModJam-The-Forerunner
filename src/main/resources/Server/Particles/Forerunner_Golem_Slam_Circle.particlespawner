@@ -17,7 +17,7 @@
   },
   "$Comment": "Rotating outer ring for the circle portal",
   "Particle": {
-    "Texture": "Particles/Textures/Circles/Ring_Green.png",
+    "Texture": "Particles/Textures/Circles/Signature_Spin_GS2.png",
     "ScaleRatioConstraint": "OneToOne",
     "UVOption": "None",
     "Animation": {
@@ -88,6 +88,9 @@
           "Max": 90
         }
       }
+    },
+    "FrameSize": {
+      "Height": 0
     }
   },
   "CameraOffset": -1.0,

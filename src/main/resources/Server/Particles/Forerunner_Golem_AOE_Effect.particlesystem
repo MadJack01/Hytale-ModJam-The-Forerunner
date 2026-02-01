@@ -5,7 +5,7 @@
       "PositionOffset": {
         "Y": 0
       },
-      "FixedRotation": false,
+      "FixedRotation": true,
       "InitialVelocity": {
         "Yaw": {
           "Min": 0,

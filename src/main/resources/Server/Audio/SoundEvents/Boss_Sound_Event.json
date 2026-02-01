@@ -1,0 +1,14 @@
+{
+  "MaxDistance": 50,
+  "Layers": [
+    {
+      "Looping": true,
+      "Files": [
+        "Sounds/Environments/Music/Boss Forerunner.ogg"
+      ]
+    }
+  ],
+  "PreventSoundInterruption": true,
+  "MaxInstance": 1,
+  "AudioCategory": "AudioCat_NPC"
+}

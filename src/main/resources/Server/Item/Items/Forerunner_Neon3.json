@@ -1,0 +1,64 @@
+{
+  "TranslationProperties": {
+    "Name": "Neon"
+  },
+  "Icon": "Icons/ItemsGenerated/Forerunner_Neon3.png",
+  "Categories": [
+    "Blocks.Rocks",
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Opacity": "Semitransparent",
+    "Group": "Stone",
+    "Flags": {},
+    "Textures": [
+      {
+        "Sides": "BlockTextures/Clay_Smooth_Yellow.png",
+        "UpDown": "BlockTextures/Clay_Smooth_Yellow.png",
+        "Weight": 1
+      }
+    ],
+    "CubeShadingMode": "Fullbright",
+    "Light": {
+      "Color": "#f00",
+      "Radius": 10
+    },
+    "Tint": [
+      "#ff0000"
+    ],
+    "BlockSoundSetId": "Metal",
+    "ParticleColor": "#ff0000"
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ],
+    "Family": [
+      "Crystal"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      24,
+      49,
+      21
+    ],
+    "Translation": [
+      -1,
+      -13.5
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Light": {
+    "Radius": 10,
+    "Color": "#f00"
+  },
+  "ItemEntity": {
+    "ShowItemParticles": false,
+    "ParticleColor": "#ff0000"
+  }
+}

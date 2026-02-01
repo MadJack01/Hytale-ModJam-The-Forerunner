@@ -17,6 +17,14 @@
       "Value": "Goblin",
       "Description": "This NPCs attitude group"
     },
+    "AlertedRange": {
+      "Value": 50,
+      "Description": "A range within which the player can be seen/sensed when the NPC is alerted to their presence"
+    },
+    "SummonKind": {
+      "Value": "Wolf_Trork_Shaman",
+      "Description": "The NPC to summon"
+    },
     "DisableDamageGroups": {
       "Value": [
         "Self"
@@ -105,6 +113,70 @@
                 {
                   "Type": "Role",
                   "Role": "Golem_Phase_Two"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Sensor": {
+            "Type": "State",
+            "State": "Combat"
+          },
+          "Instructions": [
+            {
+              "Sensor": {
+                "Type": "And",
+                "Sensors": [
+                  {
+                    "Type": "FlockLeader"
+                  },
+                  {
+                    "Type": "Self",
+                    "Filters": [
+                      {
+                        "Type": "Flock",
+                        "FlockStatus": "Leader"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "Actions": [
+                {
+                  "Type": "State",
+                  "State": ".Default"
+                }
+              ]
+            },
+            {
+              "Sensor": {
+                "Type": "Target",
+                "Range": { "Compute": "AlertedRange" }
+              },
+              "Actions": [
+                {
+                  "Type": "Timeout",
+                  "Delay": [ 2, 2 ],
+                  "Action": {
+                    "Type": "Sequence",
+                    "Actions": [
+                      {
+                        "Type": "Spawn",
+                        "Kind": { "Compute": "SummonKind" },
+                        "JoinFlock": true,
+                        "CountRange": [ 10, 20 ],
+                        "DistanceRange": [ 2, 15 ],
+                        "DelayRange": [ 0, 1 ]
+                      },
+                      {
+                        "Type": "FlockBeacon",
+                        "Message": "CompanionAttack",
+                        "SendToSelf": false,
+                        "SendTargetSlot": "LockedTarget"
+                      }
+                    ]
+                  }
                 }
               ]
             }

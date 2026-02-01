@@ -1,0 +1,35 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Forerunner_Golem_Beam_Flash",
+      "PositionOffset": {
+        "Y": 0
+      },
+      "InitialVelocity": {
+        "Yaw": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Pitch": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Speed": {
+          "Min": 0,
+          "Max": 0
+        }
+      },
+      "EmitOffset": {
+        "X": {
+          "Min": 0
+        }
+      }
+    },
+    {
+      "SpawnerId": "Forerunner_Beam_Lightning"
+    }
+  ],
+  "BoundingRadius": 100.0,
+  "CullDistance": 100.0,
+  "IsImportant": false
+}

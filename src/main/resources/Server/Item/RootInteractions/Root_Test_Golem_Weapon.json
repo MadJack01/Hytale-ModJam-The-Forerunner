@@ -1,0 +1,10 @@
+{
+  "RequireNewClick": true,
+  "ClickQueuingTimeout": 0.15,
+  "Cooldown": {
+    "Cooldown": 0.2
+  },
+  "Interactions": [
+    "Test_Interaction_Golem_Weapon"
+  ]
+}

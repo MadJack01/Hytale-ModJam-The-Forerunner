@@ -1,6 +1,7 @@
 {
   "Type": "Abstract",
   "StartState": "Idle",
+  "Debug": "DisplayState",
   "Parameters": {
     "Appearance": {
       "Value": "Trork_Hunter",
@@ -35,8 +36,12 @@
       "Description": "Percentage chance to engage in combat if another intelligent NPC engages a target."
     },
     "AlertedRange": {
-      "Value": 45,
+      "Value": 80,
       "Description": "A range within which the player can be seen/sensed when the NPC is alerted to their presence. Should be equal or lower than LeashDistance."
+    },
+    "SummonKind": {
+      "Value": "Forerunner_Spider",
+      "Description": "The NPC to summon"
     },
     "AlertedTime": {
       "Value": [
@@ -448,6 +453,11 @@
           }
         },
         {
+          "Type": "PlaySound",
+          "Once": true,
+          "SoundEventId": "Empty"
+        },
+        {
           "Type": "PlayAnimation",
           "Slot": "Status",
           "Animation": "Laydown"
@@ -473,9 +483,25 @@
           ]
         }
       ],
-      "Actions": {
-        "Reference": "Component_ActionList_Wake"
-      }
+      "Actions": [
+        {
+          "Type": "PlaySound",
+          "Once": true,
+          "SoundEventId": "Boss_Sound_Event"
+        },
+        {
+          "Type": "PlayAnimation",
+          "Slot": "Status",
+          "Animation": "Wake"
+        },
+        {
+          "Type": "Timeout",
+          "Delay": [
+            1,
+            1.1
+          ]
+        }
+      ]
     },
     {
       "$Comment": "Always clear animation when moving from Alerted state.",
@@ -566,6 +592,29 @@
   "Instructions": [
     {
       "Instructions": [
+        {
+          "Sensor": {
+            "$Comment": "Skip to Phase_2 early if enough damage has been taken while on the throne",
+            "Type": "Self",
+            "Once": true,
+            "Filters": [
+              {
+                "Type": "Stat",
+                "StatTarget": "Value",
+                "RelativeTo": "Health",
+                "Stat": "Health",
+                "RelativeToTarget": "Max",
+                "ValueRange": [ 0, 0.8 ]
+              }
+            ]
+          },
+          "Actions": [
+            {
+              "Type": "DispatchEventPhase",
+              "NextPhase": "Phase2"
+            }
+          ]
+        },
         {
           "Sensor": {
             "Type": "State",
@@ -1397,6 +1446,31 @@
                   "Type": "PlayAnimation",
                   "Slot": "Status",
                   "Animation": "Alerted"
+                },
+                {
+                  "Type": "Spawn",
+                  "Kind": {
+                    "Compute": "SummonKind"
+                  },
+                  "JoinFlock": true,
+                  "CountRange": [
+                    1,
+                    2
+                  ],
+                  "DistanceRange": [
+                    2,
+                    15
+                  ],
+                  "DelayRange": [
+                    0,
+                    0.4
+                  ]
+                },
+                {
+                  "Type": "FlockBeacon",
+                  "Message": "CompanionAttack",
+                  "SendToSelf": false,
+                  "SendTargetSlot": "LockedTarget"
                 }
               ]
             },

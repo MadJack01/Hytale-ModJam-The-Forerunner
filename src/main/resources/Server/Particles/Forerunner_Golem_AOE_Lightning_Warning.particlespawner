@@ -14,18 +14,18 @@
     "Min": 0,
     "Max": 0
   },
-  "MaxConcurrentParticles": 25,
+  "MaxConcurrentParticles": 5,
   "SpawnRate": {
     "Min": 25,
     "Max": 25
   },
   "TotalParticles": {
-    "Min": 50,
-    "Max": 50
+    "Min": 10,
+    "Max": 10
   },
   "Attractors": [
     {
-      "RadialImpulse": 5,
+      "RadialImpulse": 2,
       "DampingMultiplier": {
         "X": 0.5314410000000002,
         "Y": 0.5314410000000002,
@@ -39,7 +39,7 @@
         "Y": 0
       },
       "LinearImpulse": {
-        "Y": 0,
+        "Y": 1,
         "X": 0,
         "Z": 0
       },
@@ -95,7 +95,7 @@
       },
       "21": {
         "Opacity": 1,
-        "Color": "#ff0000"
+        "Color": "#ff6b00"
       },
       "86": {
         "FrameIndex": {
@@ -103,7 +103,7 @@
           "Max": 5
         },
         "Opacity": 1,
-        "Color": "#f8ff00"
+        "Color": "#ff6b00"
       },
       "100": {
         "Opacity": 0
@@ -116,8 +116,8 @@
       },
       "Scale": {
         "X": {
-          "Min": 3,
-          "Max": 3
+          "Min": 0.7,
+          "Max": 0.7
         }
       }
     },
@@ -148,8 +148,8 @@
       "Max": 1
     },
     "Speed": {
-      "Min": 10,
-      "Max": 20
+      "Min": 2,
+      "Max": 5
     }
   }
 }

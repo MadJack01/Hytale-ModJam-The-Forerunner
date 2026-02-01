@@ -1,0 +1,79 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Forerunner_Golem_AOE_Warning_Effect",
+        "TargetEntityPart": "Entity"
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 2,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "$Comment": "Length of Combat",
+            "RunTime": 0.217,
+            "Selector": {
+              "Id": "AOECircle",
+              "Range": 30
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "DefaultValue": {
+                    "Interactions": [
+                      "NPC_Attack_Melee_Damage"
+                    ]
+                  },
+                  "Var": "Melee_Damage",
+                  "Effects": {}
+                }
+              ]
+            },
+            "Next": {
+              "Type": "Simple",
+              "$Comment": "Pad the interaction length",
+              "RunTime": 0.55
+            },
+            "Effects": {
+              "MovementEffects": {
+                "DisableAll": true
+              },
+              "ItemPlayerAnimationsId": "Golem_Crystal_Thunder_Default",
+              "ItemAnimationId": "Stomp"
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "$Comment": "Length of Effect",
+            "RunTime": 0.183,
+            "Effects": {
+              "WorldSoundEventId": "SFX_Golem_Earth_Swing",
+              "Particles": [
+                {
+                  "SystemId": "Forerunner_Golem_AOE_Effect",
+                  "TargetEntityPart": "Entity"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

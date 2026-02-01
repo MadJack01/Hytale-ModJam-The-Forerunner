@@ -8,67 +8,11 @@
   },
   "AdjustVertical": false,
   "Effects": {
-    "WorldSoundEventId": "SFX_Daggers_T1_Pounce",
-    "LocalSoundEventId": "SFX_Daggers_T1_Pounce_Local",
     "ItemAnimationId": "JumpFar",
     "MovementEffects": {
       "DisableForward": false,
       "DisableBackward": false
     },
-    "Trails": [
-      {
-        "PositionOffset": {
-          "X": 0.5,
-          "Y": 0,
-          "Z": 0
-        },
-        "RotationOffset": {
-          "Pitch": 0,
-          "Roll": 90,
-          "Yaw": 0
-        },
-        "TargetNodeName": "Handle",
-        "TrailId": "Small_Charged"
-      },
-      {
-        "PositionOffset": {
-          "X": 0.5,
-          "Y": 0,
-          "Z": 0
-        },
-        "RotationOffset": {
-          "Pitch": 0,
-          "Roll": 90,
-          "Yaw": 0
-        },
-        "TargetNodeName": "Handle",
-        "TrailId": "Small_Charged",
-        "TargetEntityPart": "SecondaryItem"
-      }
-    ],
-    "FirstPersonParticles": [
-      {
-        "SystemId": "Daggers_Pounce_FP",
-        "TargetNodeName": "Handle",
-        "RotationOffset": {
-          "Roll": 90.0
-        },
-        "PositionOffset": {
-          "X": 0.3
-        }
-      },
-      {
-        "SystemId": "Daggers_Pounce_FP",
-        "TargetNodeName": "Handle",
-        "RotationOffset": {
-          "Roll": 90.0
-        },
-        "PositionOffset": {
-          "X": 0.3
-        },
-        "TargetEntityPart": "SecondaryItem"
-      }
-    ],
     "ItemPlayerAnimationsId": "Forerunner_Golem_Default"
   },
   "ChangeVelocityType": "Add",

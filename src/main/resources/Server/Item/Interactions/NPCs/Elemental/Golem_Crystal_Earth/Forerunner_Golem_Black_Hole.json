@@ -1,0 +1,59 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Golem_Crystal_Earth_Default",
+    "ItemAnimationId": "GroundSlam"
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 0.733,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "$Comment": "Length of Combat",
+            "RunTime": 0.217,
+            "Selector": {
+              "Id": "AOECircle",
+              "Range": 6
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "DefaultValue": {
+                    "Interactions": [
+                      "Forerunner_Black_Hole_Damage"
+                    ]
+                  },
+                  "Var": "Melee_Damage"
+                },
+                null
+              ]
+            },
+            "Next": {
+              "Type": "Simple",
+              "$Comment": "Pad the interaction length",
+              "RunTime": 0.55
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "$Comment": "Length of Effect",
+            "RunTime": 0.183,
+            "Effects": {
+              "WorldSoundEventId": "SFX_Golem_Earth_Swing"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

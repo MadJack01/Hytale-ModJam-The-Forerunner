@@ -2,7 +2,7 @@
   "Type": "Simple",
   "Effects": {
     "ItemPlayerAnimationsId": "Golem_Crystal_Thunder_Default",
-    "ItemAnimationId": "Spin",
+    "ItemAnimationId": "SwingLeft",
     "Particles": [
       {
         "SystemId": "Forerunner_Golem_AOE_Warning_Effect",
