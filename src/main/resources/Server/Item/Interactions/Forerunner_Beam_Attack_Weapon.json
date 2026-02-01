@@ -14,7 +14,7 @@
             "RunTime": 0.217,
             "Selector": {
               "Id": "Stab",
-              "EndDistance": 20,
+              "EndDistance": 10,
               "ExtendTop": 4,
               "ExtendBottom": 4,
               "ExtendLeft": 3,
@@ -37,7 +37,8 @@
               "Type": "Simple",
               "$Comment": "Pad the interaction length",
               "RunTime": 0.55
-            }
+            },
+            "Effects": {}
           }
         ]
       },
@@ -72,13 +73,6 @@
           }
         }
       ]
-    }
-  },
-  "Effects": {
-    "ItemPlayerAnimationsId": "Forerunner_Golem_Default",
-    "ItemAnimationId": "ShootBeam",
-    "MovementEffects": {
-      "DisableAll": true
     }
   }
 }

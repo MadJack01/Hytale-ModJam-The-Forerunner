@@ -3,7 +3,8 @@
     {
       "SpawnerId": "Forerunner_Golem_Beam_Flash",
       "PositionOffset": {
-        "Y": 0
+        "Y": 0,
+        "Z": 0
       },
       "InitialVelocity": {
         "Yaw": {
@@ -26,7 +27,21 @@
       }
     },
     {
-      "SpawnerId": "Forerunner_Beam_Lightning"
+      "SpawnerId": "Forerunner_Beam_Constant_Flat",
+      "PositionOffset": {
+        "Z": 0,
+        "X": 0,
+        "Y": 0.5
+      },
+      "FixedRotation": false,
+      "RotationOffset": {
+        "Pitch": 90,
+        "Roll": 0,
+        "Yaw": 90
+      }
+    },
+    {
+      "SpawnerId": "Forerunner_Beam_Constant"
     }
   ],
   "BoundingRadius": 100.0,

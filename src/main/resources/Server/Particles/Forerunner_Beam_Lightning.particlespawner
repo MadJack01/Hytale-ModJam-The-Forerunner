@@ -10,14 +10,13 @@
       "Max": 0
     },
     "Z": {
-      "Max": 0,
-      "Min": 5
+      "Max": 0
     }
   },
   "ParticleRotationInfluence": "Velocity",
   "LinearFiltering": true,
   "LightInfluence": 0,
-  "MaxConcurrentParticles": 1000,
+  "MaxConcurrentParticles": 700,
   "ParticleLifeSpan": {
     "Min": 0.25,
     "Max": 1
@@ -30,7 +29,8 @@
     "Max": 1000
   },
   "TotalParticles": {
-    "Min": 2000
+    "Min": 1200,
+    "Max": 1200
   },
   "InitialVelocity": {
     "Speed": {
@@ -85,7 +85,7 @@
     }
   ],
   "Particle": {
-    "Texture": "Particles/Textures/Basic/Spark_Direction.png",
+    "Texture": "Particles/Textures/Shapes/Long_Rhombus_Hires.png",
     "FrameSize": {
       "Width": 32,
       "Height": 32

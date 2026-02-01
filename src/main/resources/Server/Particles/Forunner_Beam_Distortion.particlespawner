@@ -1,5 +1,5 @@
 {
-  "RenderMode": "BlendLinear",
+  "RenderMode": "Distortion",
   "ParticleRotationInfluence": "BillboardVelocity",
   "MaxConcurrentParticles": 5,
   "ParticleLifeSpan": {
@@ -29,12 +29,12 @@
     "InitialAnimationFrame": {
       "Scale": {
         "X": {
-          "Min": 3,
-          "Max": 3
-        },
-        "Y": {
           "Min": 6,
           "Max": 6
+        },
+        "Y": {
+          "Min": 10,
+          "Max": 10
         }
       },
       "Opacity": 1.0,
@@ -72,5 +72,6 @@
       "Min": 0
     }
   },
+  "CameraOffset": 0.24,
   "Shape": "Sphere"
 }

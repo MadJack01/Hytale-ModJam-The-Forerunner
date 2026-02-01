@@ -46,7 +46,7 @@
               "Particles": [
                 {
                   "SystemId": "Mace_Signature_Ground_Hit",
-                  "Scale": 1,
+                  "Scale": 0.45,
                   "TargetEntityPart": "Entity"
                 }
               ],

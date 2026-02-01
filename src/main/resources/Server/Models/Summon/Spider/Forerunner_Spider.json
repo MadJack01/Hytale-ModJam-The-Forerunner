@@ -25,5 +25,9 @@
         "Head"
       ]
     }
+  },
+  "Light": {
+    "Radius": 10,
+    "Color": "#f00"
   }
 }

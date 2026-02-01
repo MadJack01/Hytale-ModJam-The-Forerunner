@@ -31,7 +31,7 @@
   "Interactions": {
     "Primary": "Root_Test_Golem_Weapon_AOE",
     "Secondary": "Root_Test_Golem_Weapon",
-    "Ability1": "Root_Weapon_Daggers_Signature_Razorstrike"
+    "Ability1": "Root_Test_Golem_Weapon_Beam"
   },
   "Tags": {
     "Type": [

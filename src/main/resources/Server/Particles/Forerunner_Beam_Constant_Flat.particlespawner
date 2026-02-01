@@ -1,6 +1,6 @@
 {
   "RenderMode": "BlendLinear",
-  "ParticleRotationInfluence": "BillboardVelocity",
+  "ParticleRotationInfluence": "None",
   "MaxConcurrentParticles": 5,
   "ParticleLifeSpan": {
     "Min": 0.5,
@@ -33,8 +33,8 @@
           "Max": 3
         },
         "Y": {
-          "Min": 6,
-          "Max": 6
+          "Min": 3,
+          "Max": 3
         }
       },
       "Opacity": 1.0,
@@ -60,10 +60,6 @@
   },
   "SpawnBurst": true,
   "InitialVelocity": {
-    "Speed": {
-      "Min": 10,
-      "Max": 10
-    },
     "Yaw": {
       "Min": 90,
       "Max": 90

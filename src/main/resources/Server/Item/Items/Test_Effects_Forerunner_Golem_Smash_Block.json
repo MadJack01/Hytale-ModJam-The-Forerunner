@@ -118,7 +118,7 @@
     "Material": "Solid",
     "Particles": [
       {
-        "SystemId": "Flamethrower_Effect",
+        "SystemId": "Forerunner_Golem_Beam_Effect",
         "TargetNodeName": "Glow",
         "Scale": 1,
         "DetachedFromModel": false,
