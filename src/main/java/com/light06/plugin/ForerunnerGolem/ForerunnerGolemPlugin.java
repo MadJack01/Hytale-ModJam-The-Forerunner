@@ -1,7 +1,6 @@
 package com.light06.plugin.ForerunnerGolem;
 
 import com.hypixel.hytale.server.core.event.events.player.AddPlayerToWorldEvent;
-import com.hypixel.hytale.server.core.event.events.player.DrainPlayerFromWorldEvent;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.light06.plugin.ForerunnerGolem.Commands.BossUiTestCommand;

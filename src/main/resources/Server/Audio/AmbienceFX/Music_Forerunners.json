@@ -1,0 +1,10 @@
+{
+  "Music": {
+    "Tracks": [
+      "Music/Boss Forerunner.ogg"
+    ],
+    "Volume": 0
+  },
+  "AudioCategory": "AudioCat_NPC",
+  "Priority": 70
+}

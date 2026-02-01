@@ -1,0 +1,11 @@
+{
+  "Conditions": {
+    "EnvironmentIds": [
+      "Forerunner_Env"
+    ]
+  },
+  "AmbientBed": {
+    "Track": "Sounds/Environments/Ambience Forerunner.ogg",
+    "Volume": -29.0
+  }
+}
