@@ -55,7 +55,7 @@ public class TriggerPhasedHandler implements Consumer<TriggerPhasedEvent> {
         String fromReplace = "Forerunner_Neon";
         String toReplace = "Forerunner_Neon2";
 
-        if (nextPhase.equals("Forerunner_Golem_Phase_3")) {
+        if (nextPhase.equals("Forerunner_Golem3")) {
             fromReplace = "Forerunner_Neon2";
             toReplace = "Forerunner_Neon3";
         }
@@ -66,7 +66,7 @@ public class TriggerPhasedHandler implements Consumer<TriggerPhasedEvent> {
         TransformComponent transformComponent = store.getComponent(npcRef, TransformComponent.getComponentType());
         Vector3i npcPos = transformComponent.getPosition().toVector3i();
 
-        int radius = 100;
+        int radius = 1000;
 
         Vector3i startPosition = npcPos.clone().add(-radius, 0, -radius);
         Vector3i endPosition = npcPos.clone().add(radius, 0, radius);
