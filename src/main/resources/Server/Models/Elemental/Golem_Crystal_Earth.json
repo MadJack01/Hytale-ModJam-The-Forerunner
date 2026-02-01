@@ -1,8 +1,7 @@
 {
-  "Model": "NPC/Boss/Forerunner Golem/Forerunner_Golem_Model.blockymodel",
-  "Texture": "NPC/Boss/Forerunner Golem/Forerunner_Golem_Texture.png",
-  "MinScale": 2.35,
-  "MaxScale": 2.35,
+  "Parent": "Player",
+  "Model": "NPC/Elemental/Golem_Crystal/Models/Model.blockymodel",
+  "Texture": "NPC/Elemental/Golem_Crystal/Models/Model_Textures/Earth.png",
   "EyeHeight": 2,
   "CrouchOffset": -0.35,
   "HitBox": {
@@ -17,6 +16,12 @@
       "Z": -0.85
     }
   },
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Elemental/Golem_Crystal/Models/Attachments/Earth/Head.blockymodel",
+      "Texture": "NPC/Elemental/Golem_Crystal/Models/Attachments/Earth/Head_Texture.png"
+    }
+  ],
   "AnimationSets": {
     "Idle": {
       "Animations": [
@@ -267,20 +272,5 @@
         }
       ]
     }
-  },
-  "Particles": [
-    {
-      "SystemId": "Forerunner_Golem_Heart_Glow",
-      "TargetNodeName": "Chest",
-      "TargetEntityPart": "Self",
-      "Scale": 1,
-      "PositionOffset": {
-        "Z": 0
-      }
-    }
-  ],
-  "Light": {
-    "Color": "#f00",
-    "Radius": 10
   }
 }

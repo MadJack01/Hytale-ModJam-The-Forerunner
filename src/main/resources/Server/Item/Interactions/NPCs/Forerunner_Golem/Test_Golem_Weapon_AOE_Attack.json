@@ -1,8 +1,6 @@
 {
   "Type": "Simple",
   "Effects": {
-    "ItemPlayerAnimationsId": "Golem_Crystal_Thunder_Default",
-    "ItemAnimationId": "SwingLeft",
     "Particles": [
       {
         "SystemId": "Forerunner_Golem_AOE_Warning_Effect",
@@ -39,14 +37,7 @@
                     ]
                   },
                   "Var": "Melee_Damage",
-                  "Effects": {
-                    "Particles": [
-                      {
-                        "SystemId": "Forerunner_Golem_AOE_Effect",
-                        "TargetEntityPart": "Entity"
-                      }
-                    ]
-                  }
+                  "Effects": {}
                 }
               ]
             },
@@ -74,7 +65,10 @@
             "Effects": {
               "WorldSoundEventId": "SFX_Golem_Earth_Swing",
               "Particles": [
-                {}
+                {
+                  "SystemId": "Forerunner_Golem_AOE_Effect",
+                  "TargetEntityPart": "Entity"
+                }
               ]
             }
           }

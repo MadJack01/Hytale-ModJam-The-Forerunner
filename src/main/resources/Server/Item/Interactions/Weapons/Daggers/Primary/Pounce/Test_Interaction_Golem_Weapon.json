@@ -8,12 +8,10 @@
   },
   "AdjustVertical": false,
   "Effects": {
-    "ItemAnimationId": "JumpFar",
     "MovementEffects": {
       "DisableForward": false,
       "DisableBackward": false
-    },
-    "ItemPlayerAnimationsId": "Forerunner_Golem_Default"
+    }
   },
   "ChangeVelocityType": "Add",
   "WaitForGround": true,

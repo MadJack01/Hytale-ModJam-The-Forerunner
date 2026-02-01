@@ -1,0 +1,60 @@
+{
+  "Animations": {
+    "Laydown": {
+      "ThirdPerson": "NPC/Elemental/Golem_Crystal/Animations/Default/Laydown.blockyanim",
+      "ThirdPersonMoving": "NPC/Elemental/Golem_Crystal/Animations/Default/Laydown.blockyanim",
+      "Speed": 1,
+      "BlendingDuration": 0.2,
+      "Looping": false
+    },
+    "JumpFar": {
+      "ThirdPerson": "NPC/Elemental/Golem_Crystal/Animations/Default/Jump_Far.blockyanim",
+      "ThirdPersonMoving": "NPC/Elemental/Golem_Crystal/Animations/Default/Jump_Far.blockyanim"
+    },
+    "SwingRight": {
+      "ThirdPerson": "NPC/Boss/Forerunner Golem/Animations/Swing_Right.blockyanim",
+      "ThirdPersonMoving": "NPC/Boss/Forerunner Golem/Animations/Swing_Right.blockyanim",
+      "Speed": 1
+    },
+    "SwingLeft": {
+      "ThirdPerson": "NPC/Boss/Forerunner Golem/Animations/Swing_Left.blockyanim",
+      "ThirdPersonMoving": "NPC/Boss/Forerunner Golem/Animations/Swing_Left.blockyanim"
+    },
+    "ShootBeam": {
+      "ThirdPerson": "NPC/Boss/Forerunner Golem/Animations/Shoot_Beam.blockyanim",
+      "ThirdPersonMoving": "NPC/Boss/Forerunner Golem/Animations/Shoot_Beam.blockyanim"
+    }
+  },
+  "Camera": {
+    "Pitch": {
+      "AngleRange": {
+        "Max": 45,
+        "Min": -45
+      },
+      "TargetNodes": [
+        "Head"
+      ]
+    },
+    "Yaw": {
+      "AngleRange": {
+        "Max": 45,
+        "Min": -45
+      },
+      "TargetNodes": [
+        "Head"
+      ]
+    }
+  },
+  "WiggleWeights": {
+    "Pitch": 2,
+    "PitchDeceleration": 0.1,
+    "Roll": 0.1,
+    "RollDeceleration": 0.1,
+    "X": 3,
+    "XDeceleration": 0.1,
+    "Y": 0.1,
+    "YDeceleration": 0.1,
+    "Z": 0.1,
+    "ZDeceleration": 0.1
+  }
+}

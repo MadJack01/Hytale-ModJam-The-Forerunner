@@ -1,0 +1,32 @@
+{
+  "Type": "DamageEntity",
+  "DamageEffects": {
+    "Knockback": {
+      "Type": "Force",
+      "Force": 10,
+      "Direction": {
+        "Y": 10
+      }
+    }
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ClearEntityEffect",
+        "Entity": "Target",
+        "EntityEffectId": "Potion_Health_Lesser_Regen"
+      },
+      {
+        "Type": "ClearEntityEffect",
+        "Entity": "Target",
+        "EntityEffectId": "Potion_Health_Greater_Regen"
+      },
+      {
+        "Type": "ClearEntityEffect",
+        "Entity": "Target",
+        "EntityEffectId": "Potion_Stamina_Regen"
+      }
+    ]
+  }
+}

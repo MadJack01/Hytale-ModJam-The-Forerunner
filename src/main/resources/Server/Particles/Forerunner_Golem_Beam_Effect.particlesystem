@@ -1,11 +1,10 @@
 {
   "Spawners": [
     {
-      "SpawnerId": "Forerunner_Golem_AOE_Lightning",
+      "SpawnerId": "Forerunner_Golem_Beam_Flash",
       "PositionOffset": {
         "Y": 0
       },
-      "FixedRotation": true,
       "InitialVelocity": {
         "Yaw": {
           "Min": 0,
@@ -25,6 +24,9 @@
           "Min": 0
         }
       }
+    },
+    {
+      "SpawnerId": "Forerunner_Beam_Lightning"
     }
   ],
   "BoundingRadius": 100.0,

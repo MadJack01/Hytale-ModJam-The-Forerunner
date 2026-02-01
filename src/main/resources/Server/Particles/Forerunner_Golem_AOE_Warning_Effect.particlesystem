@@ -1,9 +1,10 @@
 {
   "Spawners": [
     {
-      "SpawnerId": "Example_Sphere_SparkfallSparks",
+      "SpawnerId": "Lightning_Sparks",
       "PositionOffset": {
-        "Y": 0
+        "X": 0,
+        "Y": 2
       },
       "FixedRotation": false,
       "InitialVelocity": {
@@ -24,6 +25,12 @@
         "X": {
           "Min": 0
         }
+      }
+    },
+    {
+      "SpawnerId": "Forerunner_Golem_AOE_Lightning_Warning",
+      "PositionOffset": {
+        "Y": 1.5
       }
     }
   ],

@@ -35,8 +35,12 @@
       "Description": "Percentage chance to engage in combat if another intelligent NPC engages a target."
     },
     "AlertedRange": {
-      "Value": 45,
+      "Value": 80,
       "Description": "A range within which the player can be seen/sensed when the NPC is alerted to their presence. Should be equal or lower than LeashDistance."
+    },
+    "SummonKind": {
+      "Value": "Forerunner_Spider",
+      "Description": "The NPC to summon"
     },
     "AlertedTime": {
       "Value": [
@@ -1397,6 +1401,31 @@
                   "Type": "PlayAnimation",
                   "Slot": "Status",
                   "Animation": "Alerted"
+                },
+                {
+                  "Type": "Spawn",
+                  "Kind": {
+                    "Compute": "SummonKind"
+                  },
+                  "JoinFlock": true,
+                  "CountRange": [
+                    1,
+                    2
+                  ],
+                  "DistanceRange": [
+                    2,
+                    15
+                  ],
+                  "DelayRange": [
+                    0,
+                    0.4
+                  ]
+                },
+                {
+                  "Type": "FlockBeacon",
+                  "Message": "CompanionAttack",
+                  "SendToSelf": false,
+                  "SendTargetSlot": "LockedTarget"
                 }
               ]
             },

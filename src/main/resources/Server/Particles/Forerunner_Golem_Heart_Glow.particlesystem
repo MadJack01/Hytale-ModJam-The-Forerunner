@@ -3,9 +3,10 @@
     {
       "SpawnerId": "Forerunner_Golem_Orb_Glow",
       "PositionOffset": {
-        "Z": 0.25,
-        "Y": 0.85
-      }
+        "Z": 0.09,
+        "Y": 0.18
+      },
+      "FixedRotation": false
     }
   ],
   "CullDistance": 100.0

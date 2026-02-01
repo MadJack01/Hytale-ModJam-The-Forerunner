@@ -1,20 +1,11 @@
 {
   "Type": "Simple",
   "Effects": {
-    "ItemPlayerAnimationsId": "Golem_Crystal_Thunder_Default",
-    "ItemAnimationId": "SwingLeft",
-    "Particles": [
-      {
-        "SystemId": "Forerunner_Golem_AOE_Warning_Effect",
-        "TargetEntityPart": "Entity"
-      }
-    ],
-    "MovementEffects": {
-      "DisableAll": true
-    }
+    "ItemPlayerAnimationsId": "Forerunner_Golem_Default",
+    "ItemAnimationId": "ShootBeam"
   },
   "$Comment": "Prepare Delay",
-  "RunTime": 2,
+  "RunTime": 0.733,
   "Next": {
     "Type": "Parallel",
     "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
@@ -26,8 +17,12 @@
             "$Comment": "Length of Combat",
             "RunTime": 0.217,
             "Selector": {
-              "Id": "AOECircle",
-              "Range": 30
+              "Id": "Stab",
+              "EndDistance": 10,
+              "ExtendTop": 4,
+              "ExtendBottom": 4,
+              "ExtendLeft": 3,
+              "ExtendRight": 3
             },
             "HitEntity": {
               "Interactions": [
@@ -38,15 +33,7 @@
                       "NPC_Attack_Melee_Damage"
                     ]
                   },
-                  "Var": "Melee_Damage",
-                  "Effects": {
-                    "Particles": [
-                      {
-                        "SystemId": "Forerunner_Golem_AOE_Effect",
-                        "TargetEntityPart": "Entity"
-                      }
-                    ]
-                  }
+                  "Var": "Melee_Damage"
                 }
               ]
             },
@@ -55,13 +42,7 @@
               "$Comment": "Pad the interaction length",
               "RunTime": 0.55
             },
-            "Effects": {
-              "MovementEffects": {
-                "DisableAll": true
-              },
-              "ItemPlayerAnimationsId": "Golem_Crystal_Thunder_Default",
-              "ItemAnimationId": "Stomp"
-            }
+            "Effects": {}
           }
         ]
       },
@@ -74,12 +55,28 @@
             "Effects": {
               "WorldSoundEventId": "SFX_Golem_Earth_Swing",
               "Particles": [
-                {}
+                {
+                  "SystemId": "Flamethrower_Effect"
+                }
               ]
             }
           }
         ]
       }
-    ]
+    ],
+    "Effects": {
+      "Particles": [
+        {
+          "SystemId": "Forerunner_Golem_Beam_Effect",
+          "TargetEntityPart": "Entity",
+          "RotationOffset": {
+            "Yaw": 90
+          },
+          "PositionOffset": {
+            "Y": 1
+          }
+        }
+      ]
+    }
   }
 }

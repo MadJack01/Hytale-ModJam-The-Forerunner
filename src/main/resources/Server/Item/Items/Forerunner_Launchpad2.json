@@ -1,0 +1,88 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Launchpad.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Forerunner_Launchpad2.png",
+  "Categories": [
+    "Blocks.Structural"
+  ],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModel": "Blocks/Miscellaneous/Platform_Magic.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "NPC/Forerunner_Launchpad_.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Pad_Portal",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Metal",
+    "BlockEntity": {
+      "Components": {
+        "LaunchPad": {}
+      }
+    },
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "ApplyForce",
+            "Force": 40,
+            "Direction": {
+              "Y": 15,
+              "Z": -35
+            },
+            "AdjustVertical": false,
+            "Effects": {
+              "Particles": [
+                {
+                  "SystemId": "Mace_Signature_Ground_Hit",
+                  "Scale": 1,
+                  "TargetEntityPart": "Entity"
+                }
+              ],
+              "WorldSoundEventId": "SFX_Daggers_T1_Pounce",
+              "LocalSoundEventId": "SFX_Daggers_T1_Pounce_Local"
+            }
+          }
+        ]
+      }
+    },
+    "ParticleColor": "#00ddff",
+    "CubeShadingMode": "Fullbright",
+    "RequiresAlphaBlending": false,
+    "Light": {
+      "Color": "#0fe",
+      "Radius": 1
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "Quality": "Junk",
+  "ItemEntity": {
+    "ParticleColor": "#00ffff"
+  },
+  "Light": {
+    "Color": "#0fe"
+  }
+}
