@@ -485,11 +485,6 @@
       ],
       "Actions": [
         {
-          "Type": "PlaySound",
-          "Once": true,
-          "SoundEventId": "Boss_Sound_Event"
-        },
-        {
           "Type": "PlayAnimation",
           "Slot": "Status",
           "Animation": "Wake"
