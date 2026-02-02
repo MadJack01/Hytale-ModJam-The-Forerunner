@@ -29,5 +29,6 @@
   ],
   "BoundingRadius": 100.0,
   "CullDistance": 100.0,
-  "IsImportant": false
+  "IsImportant": false,
+  "LifeSpan": 0.1
 }

@@ -8,8 +8,8 @@
       "Looping": false
     },
     "JumpFar": {
-      "ThirdPerson": "NPC/Elemental/Golem_Crystal/Animations/Default/Jump_Far.blockyanim",
-      "ThirdPersonMoving": "NPC/Elemental/Golem_Crystal/Animations/Default/Jump_Far.blockyanim"
+      "ThirdPerson": "NPC/Boss/Forerunner Golem/Animations/Jump_Far.blockyanim",
+      "ThirdPersonMoving": "NPC/Boss/Forerunner Golem/Animations/Jump_Far.blockyanim"
     },
     "SwingRight": {
       "ThirdPerson": "NPC/Boss/Forerunner Golem/Animations/Swing_Right.blockyanim",
