@@ -31,7 +31,7 @@ public class BossUiTestCommand extends AbstractPlayerCommand {
         PlayerRef pRef = store.getComponent(ref, PlayerRef.getComponentType());
         if (player == null || pRef == null) { return; }
         TriggerBossEvent.dispatch(player, pRef);
-
+/*
         BlockSelection blockSelection = new BlockSelection();
 
         TransformComponent transformComponent = store.getComponent(ref, TransformComponent.getComponentType());
@@ -64,6 +64,6 @@ public class BossUiTestCommand extends AbstractPlayerCommand {
             }
         }
 
-        BuilderToolsPlugin.getState(player, pRef).setSelection(new BlockSelection());
+        BuilderToolsPlugin.getState(player, pRef).setSelection(new BlockSelection());*/
     }
 }

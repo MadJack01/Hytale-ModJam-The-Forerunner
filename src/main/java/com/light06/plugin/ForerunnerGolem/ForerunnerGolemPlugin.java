@@ -4,6 +4,7 @@ import com.hypixel.hytale.server.core.event.events.player.AddPlayerToWorldEvent;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.hypixel.hytale.server.core.plugin.event.PluginSetupEvent;
+import com.hypixel.hytale.server.core.universe.world.meta.state.ItemContainerState;
 import com.hypixel.hytale.server.npc.NPCPlugin;
 import com.light06.plugin.ForerunnerGolem.Commands.BossUiTestCommand;
 import com.light06.plugin.ForerunnerGolem.CoreComponents.BuilderActionDispatchEventPhase;
@@ -12,6 +13,7 @@ import com.light06.plugin.ForerunnerGolem.Events.TriggerPhasedEvent;
 import com.light06.plugin.ForerunnerGolem.Handler.TriggerBossHandler;
 import com.light06.plugin.ForerunnerGolem.Handler.TriggerPhasedHandler;
 import com.light06.plugin.ForerunnerGolem.Listeners.AddPlayerFromWorldEventListener;
+import com.light06.plugin.ForerunnerGolem.States.NeonBlockState;
 import com.light06.plugin.ForerunnerGolem.Systems.BossTickingSystem;
 import javax.annotation.Nonnull;
 
@@ -37,5 +39,6 @@ public class ForerunnerGolemPlugin extends JavaPlugin {
 
     @Override
     protected void start() {
+        this.getBlockStateRegistry().registerBlockState(NeonBlockState.class, "NeonState", NeonBlockState.CODEC);
     }
 }
