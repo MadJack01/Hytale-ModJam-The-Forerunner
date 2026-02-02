@@ -1,6 +1,6 @@
 {
   "Type": "ApplyForce",
-  "Force": 40,
+  "Force": 50,
   "Direction": {
     "X": 0,
     "Y": 2,

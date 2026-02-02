@@ -30,7 +30,21 @@
       "#51ff00"
     ],
     "BlockSoundSetId": "Metal",
-    "ParticleColor": "#00ff00"
+    "ParticleColor": "#00ff00",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Off",
+              "On": "Off",
+              "Off": "On"
+            }
+          }
+        ]
+      }
+    }
   },
   "Tags": {
     "Type": [

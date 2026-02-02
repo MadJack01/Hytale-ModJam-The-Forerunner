@@ -26,10 +26,10 @@
                   "Type": "Replace",
                   "DefaultValue": {
                     "Interactions": [
-                      "NPC_Attack_Melee_Damage"
+                      "Forerunner_Golem_Beam_Damage"
                     ]
                   },
-                  "Var": "Melee_Damage"
+                  "Var": ""
                 }
               ]
             },

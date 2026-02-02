@@ -10,8 +10,8 @@
   "Interactions": [
     "Forerunner_Golem_Swing_Left",
     "Forerunner_Golem_Swing_Right",
-    "Forerunner_Golem_Jump_Force",
     "Forerunner_Golem_AOE_Attack",
+    "Forerunner_Golem_Jump_Force",
     "Forerunner_Beam_Attack"
   ]
 }
