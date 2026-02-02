@@ -1,7 +1,36 @@
 {
-    "Group": "com.light06",
-    "Name": "The Forerunner",
-    "Version": "1.0.0",
-    "Main": "com.light06.plugin.TheForerunner.TheForerunnerPlugin",
-    "IncludesAssetPack": true
+  "Group": "com.light06",
+  "Name": "The Forerunner",
+  "Version": "1.0.0",
+  "Description": "A TRON-inspired digital dimension featuring a unique boss fight against Avast.",
+  "Authors": [
+    {
+      "Name": "Light06",
+      "Email": "",
+      "Url": ""
+    },
+    {
+      "Name": "Nalo",
+      "Email": "",
+      "Url": ""
+    },
+    {
+      "Name": "Varell",
+      "Email": "",
+      "Url": ""
+    },
+    {
+      "Name": "Xixi",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "Main": "com.light06.plugin.TheForerunner.TheForerunnerPlugin",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true,
+  "SubPlugins": []
 }

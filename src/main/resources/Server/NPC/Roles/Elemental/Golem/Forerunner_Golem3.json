@@ -9,7 +9,7 @@
     ],
     "MaxHealth": 800,
     "ViewSector": 150,
-    "DropList": "Empty",
+    "DropList": "Drop_Avast",
     "Appearance": "Forerunner_Golem3",
     "Weapons": [],
     "OffHand": [],
