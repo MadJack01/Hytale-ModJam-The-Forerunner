@@ -1,4 +1,4 @@
-package com.light06.plugin.ForerunnerGolem.Events;
+package com.light06.plugin.TheForerunner.Events;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.event.IEvent;
@@ -11,7 +11,6 @@ import javax.annotation.Nonnull;
 public record TriggerPhasedEvent(
         @Nonnull Ref<EntityStore> npcRef, String nextPhase
 ) implements IEvent<Void> {
-
     public static void dispatch(Ref<EntityStore> npcRef, String nextPhase) {
         IEventDispatcher<TriggerPhasedEvent, TriggerPhasedEvent> dispatcher = HytaleServer.get().getEventBus().dispatchFor(TriggerPhasedEvent.class);
 

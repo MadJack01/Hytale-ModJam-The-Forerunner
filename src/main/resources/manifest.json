@@ -1,7 +1,7 @@
 {
     "Group": "com.light06",
-    "Name": "Forerunner Golem",
-    "Version": "0.0.2",
-    "Main": "com.light06.plugin.ForerunnerGolem.ForerunnerGolemPlugin",
+    "Name": "The Forerunner",
+    "Version": "1.0.0",
+    "Main": "com.light06.plugin.TheForerunner.TheForerunnerPlugin",
     "IncludesAssetPack": true
 }

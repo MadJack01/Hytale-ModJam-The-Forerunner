@@ -1,4 +1,4 @@
-package com.light06.plugin.ForerunnerGolem.CoreComponents;
+package com.light06.plugin.TheForerunner.CoreComponents;
 
 import com.google.gson.JsonElement;
 import com.hypixel.hytale.server.npc.asset.builder.BuilderDescriptorState;

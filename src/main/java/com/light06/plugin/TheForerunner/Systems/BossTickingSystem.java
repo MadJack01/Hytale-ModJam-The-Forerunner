@@ -1,4 +1,4 @@
-package com.light06.plugin.ForerunnerGolem.Systems;
+package com.light06.plugin.TheForerunner.Systems;
 
 import com.hypixel.hytale.component.ArchetypeChunk;
 import com.hypixel.hytale.component.CommandBuffer;
@@ -12,8 +12,8 @@ import com.hypixel.hytale.server.core.modules.entitystats.EntityStatValue;
 import com.hypixel.hytale.server.core.modules.entitystats.asset.DefaultEntityStatTypes;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.npc.entities.NPCEntity;
-import com.light06.plugin.ForerunnerGolem.UI.BossHealthHud;
-import com.light06.plugin.ForerunnerGolem.UI.EmptyHudUI;
+import com.light06.plugin.TheForerunner.UI.BossHealthHud;
+import com.light06.plugin.TheForerunner.UI.EmptyHudUI;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 

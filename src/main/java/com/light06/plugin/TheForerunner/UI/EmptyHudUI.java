@@ -1,4 +1,4 @@
-package com.light06.plugin.ForerunnerGolem.UI;
+package com.light06.plugin.TheForerunner.UI;
 
 import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;

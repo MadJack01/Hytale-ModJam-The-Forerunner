@@ -1,11 +1,11 @@
-package com.light06.plugin.ForerunnerGolem.Listeners;
+package com.light06.plugin.TheForerunner.Listeners;
 
 import com.hypixel.hytale.component.Holder;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.event.events.player.AddPlayerToWorldEvent;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-import com.light06.plugin.ForerunnerGolem.Events.TriggerBossEvent;
+import com.light06.plugin.TheForerunner.Events.TriggerBossEvent;
 
 public class AddPlayerFromWorldEventListener {
     public static void on(AddPlayerToWorldEvent event) {

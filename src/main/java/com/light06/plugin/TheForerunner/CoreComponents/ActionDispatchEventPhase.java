@@ -1,4 +1,4 @@
-package com.light06.plugin.ForerunnerGolem.CoreComponents;
+package com.light06.plugin.TheForerunner.CoreComponents;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
@@ -7,7 +7,7 @@ import com.hypixel.hytale.server.npc.asset.builder.BuilderSupport;
 import com.hypixel.hytale.server.npc.corecomponents.ActionBase;
 import com.hypixel.hytale.server.npc.role.Role;
 import com.hypixel.hytale.server.npc.sensorinfo.InfoProvider;
-import com.light06.plugin.ForerunnerGolem.Events.TriggerPhasedEvent;
+import com.light06.plugin.TheForerunner.Events.TriggerPhasedEvent;
 
 import javax.annotation.Nonnull;
 
