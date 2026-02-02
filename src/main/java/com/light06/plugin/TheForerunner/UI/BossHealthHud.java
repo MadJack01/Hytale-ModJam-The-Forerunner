@@ -37,25 +37,24 @@ public class BossHealthHud extends CustomUIHud {
         HudManager hudManager = player.getHudManager();
 
         assert player.getWorld() != null;
-        CompletableFuture.runAsync(()-> {
-            if (isErased) {
-                player.getHudManager().setCustomHud(pRef, new EmptyHudUI(pRef));
-                return;
-            }
-            if (!(hudManager.getCustomHud() instanceof BossHealthHud)) {
-                hudManager.setCustomHud(pRef, new BossHealthHud(pRef, bossName, 1));
-                EventTitleUtil.showEventTitleToPlayer(pRef,
-                        Message.raw("BOSS FIGHT"), Message.raw(bossName),
-                        true, "ui/icons/skull.png", 3.0f, 0.5f, 0.5f);
 
-                // Show notification
-                NotificationUtil.sendNotification(
-                        pRef.getPacketHandler(),
-                        Message.raw("A powerful enemy approaches!"),
-                        NotificationStyle.Danger);
-            } else {
-                player.getHudManager().setCustomHud(pRef, new EmptyHudUI(pRef));
-            }
-        }, player.getWorld());
+        if (isErased) {
+            player.getHudManager().setCustomHud(pRef, new EmptyHudUI(pRef));
+            return;
+        }
+        if (!(hudManager.getCustomHud() instanceof BossHealthHud)) {
+            hudManager.setCustomHud(pRef, new BossHealthHud(pRef, bossName, 1));
+            EventTitleUtil.showEventTitleToPlayer(pRef,
+                    Message.raw("BOSS FIGHT"), Message.raw(bossName),
+                    true, "ui/icons/skull.png", 3.0f, 0.5f, 0.5f);
+
+            // Show notification
+            NotificationUtil.sendNotification(
+                    pRef.getPacketHandler(),
+                    Message.raw("A powerful enemy approaches!"),
+                    NotificationStyle.Danger);
+        } else {
+            player.getHudManager().setCustomHud(pRef, new EmptyHudUI(pRef));
+        }
     }
 }

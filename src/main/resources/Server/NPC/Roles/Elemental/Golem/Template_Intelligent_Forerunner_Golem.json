@@ -1,7 +1,6 @@
 {
   "Type": "Abstract",
   "StartState": "Idle",
-  "Debug": "DisplayState",
   "Parameters": {
     "NextPhaseRangeHp": {
       "Value": [0,0],
