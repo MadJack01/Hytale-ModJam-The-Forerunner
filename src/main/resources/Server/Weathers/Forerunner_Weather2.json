@@ -113,11 +113,11 @@
       "Colors": [
         {
           "Hour": 3,
-          "Color": "#ff0333c7"
+          "Color": "#f5ff00c7"
         },
         {
           "Hour": 21,
-          "Color": "#ff0333c7"
+          "Color": "#e0ff03c7"
         }
       ],
       "Speeds": [

@@ -47,6 +47,12 @@ public class TriggerPhasedHandler implements Consumer<TriggerPhasedEvent> {
     private void switchWeather(String nextPhase, World world, @Nonnull Store<EntityStore> store) {
         String forcedWeather = "Forerunner_Weather";
 
+        if(nextPhase.equals("Forerunner_Golem2")) {
+            forcedWeather = "Forerunner_Weather2";
+        } else if (nextPhase.equals("Forerunner_Golem3")) {
+            forcedWeather = "Forerunner_Weather3";
+        }
+
         WeatherResource weatherResource = store.getResource(WeatherResource.getResourceType());
         weatherResource.setForcedWeather(forcedWeather);
 
@@ -56,14 +62,6 @@ public class TriggerPhasedHandler implements Consumer<TriggerPhasedEvent> {
     }
 
     private void replaceBlock(String nextPhase, Ref<EntityStore> npcRef, World world, @Nonnull Store<EntityStore> store) {
-        String nextTint;
-
-        if (nextPhase.equals("Forerunner_Golem3")) {
-            nextTint = "e8ee0d";
-        } else {
-            nextTint = "ff0000";
-        }
-
         TransformComponent transformComponent = store.getComponent(npcRef, TransformComponent.getComponentType());
         Vector3i npcPos = transformComponent.getPosition().toVector3i();
 
@@ -73,6 +71,14 @@ public class TriggerPhasedHandler implements Consumer<TriggerPhasedEvent> {
         Vector3i endPosition = npcPos.clone().add(radius, 150, radius);
 
         world.execute(() -> {
+            String nextTint = "51ff00";
+
+            if(nextPhase.equals("Forerunner_Golem2")) {
+                nextTint = "e8ee0d";
+            } else if (nextPhase.equals("Forerunner_Golem3")) {
+                nextTint = "ff0000";
+            }
+
             Vector3i min = Vector3i.min(startPosition, endPosition);
             Vector3i max = Vector3i.max(startPosition, endPosition);
 
