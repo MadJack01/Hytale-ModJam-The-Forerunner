@@ -64,7 +64,7 @@ public class TriggerPhasedHandler implements Consumer<TriggerPhasedEvent> {
             String nextTint = "51ff00";
 
             if(nextPhase.equals("Forerunner_Golem2")) {
-                nextTint = "e8ee0d";
+                nextTint = "Ff8a00";
             } else if (nextPhase.equals("Forerunner_Golem3")) {
                 nextTint = "ff0000";
             }

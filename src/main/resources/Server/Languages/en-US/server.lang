@@ -2,5 +2,5 @@ items.PortalKey_Forerunner.name = Fragment: Orbis - The Forerunners
 items.PortalKey_Forerunner.description =  <msg key="server.items.PortalKey.description"/>\n\n<i>The land of the inhabitants of orbis before it's fracture</i>
 portals.Forerunner = The Forerunners world
 portals.Forerunner.description = Someone may be waiting for you there
-portals.Forerunner.tip1 = Tip 2
-portals.Forerunner.tip2 = Tip 1
+portals.Forerunner.tip1 = Bring full Adamantite, a powerful enemy is waiting.
+portals.Forerunner.tip2 = Let the world load so the fight doesn't break 2-5m.
