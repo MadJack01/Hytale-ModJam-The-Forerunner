@@ -38,7 +38,7 @@
     "Flags": {},
     "Gathering": {
       "Breaking": {
-        "GatherType": "Rocks"
+        "GatherType": "Stone"
       }
     },
     "ParticleColor": "#000000",

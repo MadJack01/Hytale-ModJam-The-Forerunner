@@ -9,6 +9,7 @@
   "PlayerAnimationsId": "Block",
   "BlockType": {
     "Material": "Solid",
+    "Group": "Stone",
     "DrawType": "Model",
     "CustomModel": "Blocks/Miscellaneous/Platform_Magic.blockymodel",
     "CustomModelTexture": [
@@ -21,7 +22,7 @@
     "Flags": {},
     "Gathering": {
       "Breaking": {
-        "GatherType": "SoftBlocks"
+        "GatherType": "Stone"
       }
     },
     "BlockParticleSetId": "Stone",
@@ -78,7 +79,7 @@
     ]
   },
   "ItemSoundSetId": "ISS_Blocks_Stone",
-  "Quality": "Junk",
+  "Quality": "Rare",
   "ItemEntity": {
     "ParticleColor": "#00ffff"
   },

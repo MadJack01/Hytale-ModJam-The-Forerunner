@@ -3,7 +3,10 @@
   "StartState": "Idle",
   "Parameters": {
     "NextPhaseRangeHp": {
-      "Value": [0,0],
+      "Value": [
+        0,
+        0
+      ],
       "Description": "The range of HP for trigger next phase"
     },
     "NextPhaseRole": {
@@ -11,15 +14,24 @@
       "Description": "The NPC Role of the next phase"
     },
     "SummonCountRange": {
-      "Value": [1,1],
+      "Value": [
+        1,
+        1
+      ],
       "Description": "The range of number npc to spawn"
     },
     "SummonDistanceRange": {
-      "Value": [2,10],
+      "Value": [
+        2,
+        10
+      ],
       "Description": "The range of distance to spawn"
     },
     "SummonDelayRange": {
-      "Value": [0,0],
+      "Value": [
+        0,
+        0
+      ],
       "Description": "The range of delay to spawn"
     },
     "Appearance": {
@@ -47,7 +59,7 @@
       "Description": "The range from which the target will be heard. If zero, hearing will be disabled."
     },
     "AbsoluteDetectionRange": {
-      "Value": 35,
+      "Value": 50,
       "Description": "The range at which a target is guaranteed to be detected. If zero, abosulte detection will be disabled."
     },
     "ChanceToBeAlertedWhenReceivingCallForHelp": {
@@ -617,19 +629,25 @@
                 "RelativeTo": "Health",
                 "Stat": "Health",
                 "RelativeToTarget": "Max",
-                "ValueRange": {"Compute": "NextPhaseRangeHp"}
+                "ValueRange": {
+                  "Compute": "NextPhaseRangeHp"
+                }
               }
             ]
           },
           "Actions": [
             {
               "Type": "DispatchEventPhase",
-              "NextPhase": {"Compute": "NextPhaseRole"}
+              "NextPhase": {
+                "Compute": "NextPhaseRole"
+              }
             },
             {
               "Type": "Role",
               "Once": true,
-              "Role": {"Compute": "NextPhaseRole"}
+              "Role": {
+                "Compute": "NextPhaseRole"
+              }
             }
           ]
         },
@@ -1471,9 +1489,15 @@
                     "Compute": "SummonKind"
                   },
                   "JoinFlock": true,
-                  "CountRange": {"Compute": "SummonCountRange"},
-                  "DistanceRange": {"Compute": "SummonDistanceRange"},
-                  "DelayRange": {"Compute": "SummonDelayRange"}
+                  "CountRange": {
+                    "Compute": "SummonCountRange"
+                  },
+                  "DistanceRange": {
+                    "Compute": "SummonDistanceRange"
+                  },
+                  "DelayRange": {
+                    "Compute": "SummonDelayRange"
+                  }
                 },
                 {
                   "Type": "FlockBeacon",
@@ -1808,7 +1832,6 @@
                     "_ExportStates": [
                       "Search.Confused",
                       "Search.Confused"
-
                     ],
                     "ViewRange": {
                       "Compute": "AlertedRange"

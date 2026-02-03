@@ -1,0 +1,76 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Royal_Magic_Potion_Glow.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "Set": "Furniture_Crude",
+  "Icon": "Icons/ItemsGenerated/Forerunner_Barrier_Particles2.png",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "InteractionConfig": {
+    "Priorities": {
+      "Secondary": {
+        "MainHand": 1,
+        "OffHand": -1
+      }
+    }
+  },
+  "BlockType": {
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Ancient/Ladder.blockymodel",
+    "CustomModelScale": 0.7,
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/_Debug/TextureEmpty.png"
+      }
+    ],
+    "DrawType": "Model",
+    "Light": {
+      "Radius": 1,
+      "Color": "#0ef"
+    },
+    "Opacity": "Transparent",
+    "RandomRotation": "None",
+    "Looping": false,
+    "Material": "Solid",
+    "Particles": [
+      {
+        "SystemId": "Forerunner_Beam_Particles2",
+        "DetachedFromModel": false,
+        "PositionOffset": {
+          "Y": 0,
+          "Z": 0
+        },
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Glow",
+        "RotationOffset": {
+          "Roll": 0
+        }
+      }
+    ],
+    "SupportDropType": "Destroy",
+    "CubeShadingMode": "Fullbright"
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Crude"
+    ]
+  },
+  "Scale": 1
+}

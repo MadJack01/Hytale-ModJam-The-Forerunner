@@ -4,20 +4,21 @@
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
+    "Blocks.Rocks",
     "Blocks.Rocks"
   ],
   "Set": "Furniture_Crude",
-  "Icon": "Icons/ItemsGenerated/Furniture_Royal_Magic_Potion_Glow.png",
+  "Icon": "Icons/ItemsGenerated/Forerunner_Barrier_Particles.png",
   "IconProperties": {
-    "Scale": 0.5,
+    "Scale": 0.58823,
     "Rotation": [
       22.5,
       45,
       22.5
     ],
     "Translation": [
-      -1,
-      -23
+      0,
+      -13.5
     ]
   },
   "InteractionConfig": {
@@ -28,12 +29,7 @@
       }
     }
   },
-  "Interactions": {
-    "Primary": "Root_Unarmed_Attack_Swing_Left",
-    "Secondary": "Block_Secondary"
-  },
   "BlockType": {
-    "BlockParticleSetId": "GlassMagic",
     "BlockSoundSetId": "Metal",
     "CustomModel": "Blocks/Decorative_Sets/Ancient/Ladder.blockymodel",
     "CustomModelScale": 0.7,
@@ -43,59 +39,12 @@
       }
     ],
     "DrawType": "Model",
-    "Flags": {},
-    "Gathering": {
-      "Soft": {
-        "IsWeaponBreakable": false
-      }
-    },
     "Light": {
       "Radius": 1,
       "Color": "#0ef"
     },
     "Opacity": "Transparent",
-    "RandomRotation": "YawStep1",
-    "Support": {
-      "Down": [
-        {
-          "FaceType": "Full"
-        },
-        {
-          "FaceType": "Full",
-          "Filler": []
-        },
-        {
-          "FaceType": "Branch"
-        },
-        {
-          "FaceType": "Rock_Beam"
-        },
-        {
-          "FaceType": "Wood_Beam"
-        },
-        {
-          "FaceType": "Fence"
-        },
-        {
-          "FaceType": "Fence_Corner"
-        },
-        {
-          "FaceType": "Wall"
-        },
-        {
-          "FaceType": "Wall_Corner"
-        },
-        {
-          "FaceType": "Rope"
-        },
-        {
-          "BlockTypeId": "Deco_Iron_Chain_Small"
-        },
-        {
-          "BlockTypeId": "Deco_Iron_Chains_Vertical"
-        }
-      ]
-    },
+    "RandomRotation": "None",
     "Looping": false,
     "Material": "Solid",
     "Particles": [
@@ -104,24 +53,18 @@
         "DetachedFromModel": false,
         "PositionOffset": {
           "Y": 0,
-          "Z": 0
+          "Z": 0,
+          "X": 0
         },
         "TargetEntityPart": "Entity",
-        "TargetNodeName": "Glow"
-      }
-    ],
-    "State": {
-      "Definitions": {
-        "On": {},
-        "Off": {
-          "InteractionHint": "server.interactionHints.turnon",
-          "Light": null,
-          "Particles": null,
-          "AmbientSoundEventId": null
+        "TargetNodeName": "Glow",
+        "RotationOffset": {
+          "Pitch": 0
         }
       }
-    },
-    "SupportDropType": "Destroy"
+    ],
+    "SupportDropType": "Destroy",
+    "CubeShadingMode": "Fullbright"
   },
   "Tags": {
     "Type": [
@@ -130,9 +73,6 @@
     "Family": [
       "Crude"
     ]
-  },
-  "Utility": {
-    "Usable": false
   },
   "Scale": 1
 }

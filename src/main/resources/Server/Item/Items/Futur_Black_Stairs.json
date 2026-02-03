@@ -33,7 +33,7 @@
     "Gathering": {
       "Breaking": {
         "ItemId": "Rock_Slate_Cobble_Stairs",
-        "GatherType": "Rocks"
+        "GatherType": "Stone"
       }
     },
     "Supporting": {
