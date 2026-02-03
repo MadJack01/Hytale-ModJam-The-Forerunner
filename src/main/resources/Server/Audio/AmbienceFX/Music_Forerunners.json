@@ -6,5 +6,10 @@
     "Volume": 0
   },
   "AudioCategory": "AudioCat_NPC",
-  "Priority": 70
+  "Priority": 70,
+  "Conditions": {
+    "EnvironmentIds": [
+      "Forerunner_Env"
+    ]
+  }
 }

@@ -2,9 +2,19 @@
   "Type": "NoiseRange",
   "Biomes": [
     {
+      "Biome": "Void",
+      "Min": 1.1,
+      "Max": 2
+    },
+    {
+      "Biome": "Void_Buffer_Oasis",
+      "Min": 1,
+      "Max": 1.1
+    },
+    {
       "Biome": "Forerunner_Biome",
       "Min": 0,
-      "Max": 2
+      "Max": 1
     },
     {
       "Biome": "Void_Buffer_Oasis",
