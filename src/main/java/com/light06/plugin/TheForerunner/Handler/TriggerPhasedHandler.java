@@ -69,7 +69,7 @@ public class TriggerPhasedHandler implements Consumer<TriggerPhasedEvent> {
             String nextTint = "51ff00";
 
             if(nextPhase.equals("Forerunner_Golem2")) {
-                nextTint = "e8ee0d";
+                nextTint = "Ff8a00";
                 for (PlayerRef pRef : Universe.get().getPlayers()) {
                     NotificationUtil.sendNotification(
                             pRef.getPacketHandler(),
